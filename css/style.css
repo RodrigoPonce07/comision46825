@@ -1,0 +1,567 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+/**
+
+font-family: 'Economica', sans-serif;
+font-family: 'Beau Rivage', cursive;
+
+*/
+
+
+/**
+INDEX INICIO
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+}
+.navBar{
+    display: flex;
+    gap: 3.125rem;
+    list-style: none;
+    padding-right: 1.875rem;
+    background-color: pink;
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5625rem;
+}
+
+.slogan {
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/img/eslogan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.loMasPedido {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.popular {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-areas: 
+    "item1 item2 item3"
+    ;
+    justify-content: center;
+    gap: 5.625rem;
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    background-color: pink;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: palevioletred;
+    border-radius: 30px;
+    height: 320px;
+}
+
+.cards img {
+    display: flex;
+    width: 230px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cards button {
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 230px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cards h2 {
+    margin-top: 10px;
+}
+
+.cards h3 {
+    margin-top: 8px;
+    margin-left: 22px;
+
+}
+
+.todosProductos {
+    background-color: #916DB3;
+    justify-content: center;
+    margin-top: 30px;
+    padding-right: 990px;
+    border-radius: 50px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.todosProductos h3 {
+    color: white;
+    margin-left: 300px;
+    text-align: center;
+    font-size: 30px;
+    width: 400px;
+}
+
+
+
+.pie {
+    display: flex;
+    background-color: #FDE5EC;
+    justify-content: center;
+}
+
+.logoRedes {
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.redes {
+    display: flex;
+    text-decoration: none;
+    margin-left: -90px;
+    margin-top: 15px;
+    width: 300px;
+}
+
+
+@media (max-width: 1024px) {
+    header{
+    flex-direction: column;
+    } 
+
+    .todosProductos {
+        margin-left: -160px;
+    }
+
+    .slogan {
+        width: 100%;
+        align-items: start;
+        height: 350px;
+
+    }
+
+    .cards {
+        width: 245px;
+        margin-left: -40px;
+        width: 240px;
+
+    }
+
+    .logoRedes {
+        margin-right: 100px;
+        margin-top: 5px;
+        margin-left: 1px;
+    }
+
+    .redes {
+    display: flex;
+    text-decoration: none;
+    margin-left: -90px;
+    margin-top: 15px;
+    width: 300px;
+}
+
+.cards img {
+    display: flex;
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cards button {
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 230px;
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+    header{
+    flex-direction: column;
+    } 
+
+    .todosProductos {
+        margin-left: -160px;
+    }
+
+    .slogan {
+        width: 100%;
+        align-items: start;
+        height: 350px;
+
+    }
+
+    .cards {
+        width: 245px;
+        margin-left: -40px;
+        width: 240px;
+
+    }
+
+    .logoRedes {
+        margin-right: 100px;
+        margin-top: 5px;
+        margin-left: 1px;
+    }
+
+    .redes {
+    display: flex;
+    text-decoration: none;
+    margin-left: -90px;
+    margin-top: 15px;
+    width: 300px;
+}
+
+.cards img {
+    display: flex;
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cards button {
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 230px;
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+
+
+}
+
+@media (max-width: 425px) {
+    header{
+    flex-direction: column;
+    justify-content:space-between;
+    } 
+
+    .todosProductos {
+        margin-left: -160px;
+    }
+
+    .slogan {
+        width: 100%;
+        align-items: start;
+        height: 150px;
+
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 45px;
+        margin-left: -40px;
+        width: 100px;
+
+    }
+
+    .logoRedes {
+        margin-right: 100px;
+        margin-top: 5px;
+        margin-left: 1px;
+    }
+
+    .redes {
+    display: flex;
+    text-decoration: none;
+    margin-left: -90px;
+    margin-top: 15px;
+    width: 300px;
+}
+
+.cards img {
+    display: flex;
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cards button {
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 230px;
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+
+
+}
+
+
+/**
+PRODUCTOS
+*/
+
+.tituloCat {
+    font-family: 'Economica', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+.categorias {
+    font-size: 25px;
+    line-height: 80px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.categorias2 {
+    display: flex;
+    font-family: 'Economica', sans-serif;
+}
+
+.todosLosProductosPrimeros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Beau Rivage', cursive;
+    text-align: center;
+    height: 375px;
+    margin-top: -350px;
+    padding-left: 300px;
+}
+
+.cardsProductos {
+    background-color: #E48586;
+    border-radius: 15%;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    padding-top: 20px;
+}
+
+.todosLosProductosSegundos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Beau Rivage', cursive;
+    text-align: center;
+    height: 375px;
+    margin-top: -10px;
+    padding-left: 300px;
+}
+
+.todosLosProductosTerceros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Beau Rivage', cursive;
+    text-align: center;
+    height: 375px;
+    margin-top: -10px;
+    padding-left: 300px;
+}
+
+.arreglo {
+    height: 225px;
+    width: 275px;
+}
+
+
+.todosLosProductosCuartos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Beau Rivage', cursive;
+    text-align: center;
+    height: 375px;
+    margin-top: -10px;
+    padding-left: 300px;
+}
+
+/**
+QUIENES SOMOS
+*/
+
+.imagenQuienes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1085px;
+}
+
+.quienesSomosTexto {
+    display: flex;
+    margin-top: -550px;
+    font-family: 'Economica', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pieQuien {
+    display: flex;
+    background-color: #FDE5EC;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/**
+TRABAJA CON NOSOTROS
+*/
+
+.pastelero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1085px;
+}
+
+.titulo {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    margin-top: -2300px;
+    font-family: 'Economica', sans-serif;
+    font-size: 60px;
+}
+
+.subtitulo {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 40px;
+    margin-top: 110px;
+}
+
+.texto {
+    text-align: center;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 60px;
+    margin-top: 90px;
+}
+
+.textofinal {
+    text-align: center;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 60px;
+    margin-top: 250px;
+}
+
+.pieTrabaja {
+    display: flex;
+    background-color: #FDE5EC;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/**
+CONTACTO
+*/
+
+.pieContacto {
+    display: flex;
+    background-color: #FDE5EC;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contactoTitulo {
+    font-family: 'Economica', sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    text-decoration: underline;
+    margin-bottom: -144px;
+    margin-left: 20px;
+}
+
+#nombre {
+    font-family: 'Economica', sans-serif;
+    height: 100px;
+    width: 500px;
+    border-radius: 40px;
+    margin-top: 150px;
+    font-size: 40px;
+    margin-left: 18px;
+}
+
+#email {
+    font-family: 'Economica', sans-serif;
+    height: 100px;
+    width: 250px;
+    border-radius: 40px;
+    font-size: 40px;
+    margin-left: 20px;
+    display: flex;
+    margin-top: 10px;
+}
+
+#number {
+    font-family: 'Economica', sans-serif;
+    height: 100px;
+    width: 250px;
+    border-radius: 40px;
+    font-size: 40px;
+    margin-left: 275px;
+    margin-top: -100px;
+    display: flex;
+}
+
+#CV {
+    font-family: 'Economica', sans-serif;
+    height: 300px;
+    width: 500px;
+    border-radius: 40px;
+    margin-top: 10px;
+    font-size: 40px;
+    margin-left: 18px;
+
+}
+
+#sumbit1 {
+    font-family: 'Economica', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: #FDE5EC;
+    margin-left: 120px;
+    margin-top: 30px;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px
+}
+
+.navBar2 {
+    text-decoration: none;
+    color: black;
+}
+
+.sincolor {
+    text-decoration: none;
+    color: black;
+}
+
